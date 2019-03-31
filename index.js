@@ -11,3 +11,12 @@ const inventors = [
 const people = ['Beck, Glenn', 'Becker, Carl', 'Becket, Samuel', 'Beddoes, Mick', 'Beacher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd',
   'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Miltion', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Anuerin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk',
   'Blair, Robert', 'Blair, Tony', 'Blake, William'];
+
+//filter: Find inventors who lived between 1500 and 1600
+const fifteen = inventors.filter((inventor) => (inventor.year > 1500 && inventor.year <= 1600));
+const cLast = inventors.filter(lastName => lastName.last[0] === "C");
+const secondE = inventors.filter(second => second.last[1] === "e");
+console.table(secondE)
+
+//Map: Return the full names of all the inventors
+let names = inventors.map(name => `${name.first} ${name.last}`);
