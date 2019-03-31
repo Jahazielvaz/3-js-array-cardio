@@ -16,7 +16,12 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Becket, Samuel', 'Beddoes, Mick'
 const fifteen = inventors.filter((inventor) => (inventor.year > 1500 && inventor.year <= 1600));
 const cLast = inventors.filter(lastName => lastName.last[0] === "C");
 const secondE = inventors.filter(second => second.last[1] === "e");
-console.table(secondE)
 
 //Map: Return the full names of all the inventors
 let names = inventors.map(name => `${name.first} ${name.last}`);
+
+//Sort: Sort the inventors from older to younger.
+let ageSort = inventors.sort((a, b) => (a.year > b.year ? 1 : -1));
+let alphabetSort = inventors.sort((a, b) => (a.first > b.first ? 1 : -1));
+
+console.table(ageSort);
