@@ -2,9 +2,9 @@ INTRO: The purpose of this project is to help you get really good with array met
 
 REQUIREMENTS:
 Master the following array methods, to the point where you can perform each of them without having to look up the syntax, and that you fully understand how each of them work, and why they work. You also need to get to a level where you no longer forget them when you're not using them.
--filter() :
--map() :
--sort() :
+-filter() : This allows you to select certain records in a table and return them based on the criteria you give them.
+-map() : This allows you to iterate through an array and apply the desired function to each object in the array, and returns a brand new array with the desired outcome. This could be great if you want to return certain values from each of the objects in the array.
+-sort() : This allows you to edit your table and organize it based on the criteria you give it. 
 -reduce() :
 
 THINGS I'VE LEARNED
