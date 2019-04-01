@@ -31,3 +31,13 @@ let totalYears = inventors.reduce((total, inventor) => {
 let newTotalYears = inventors.map(inventor => (inventor.passed - inventor.year))
 // console.log(totalYears);
 // console.log(newTotalYears);
+let lastNames = inventors.reduce((result, lastName) => {
+  return result + " " + [lastName.last];
+
+}, "");
+
+let firstNames = inventors.reduce((result, inventorName) => {
+  return result + " " + inventorName.first
+}, '');
+
+console.log(firstNames);
