@@ -5,7 +5,7 @@ Master the following array methods, to the point where you can perform each of t
 -filter() : This allows you to select certain records in a table and return them based on the criteria you give them.
 -map() : This allows you to iterate through an array and apply the desired function to each object in the array, and returns a brand new array with the desired outcome. This could be great if you want to return certain values from each of the objects in the array.
 -sort() : This allows you to edit your table and organize it based on the criteria you give it.
--reduce() :
+-reduce() : This allows you to iterate through every value inside the array, and then pass in a function. Pretty similar to the map feature, but it does have one big distinction. The map feature always accounts for every single value in the array, and returns each of the values with the new desired outcome, while the reduce feature return the sum of all the values into one single attribute
 
 THINGS I'VE LEARNED
 -Console.table() is super cool. It actually shows you the data in an itemized table. Super cool!

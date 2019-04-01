@@ -1,4 +1,4 @@
-const inventors = [
+let inventors = [
   {first: 'Albert', last: 'Einstein', year: 1879, passed: 1955},
   {first: 'Isaac', last: 'Newton', year: 1643, passed: 1727},
   {first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642},
@@ -24,4 +24,10 @@ let names = inventors.map(name => `${name.first} ${name.last}`);
 let ageSort = inventors.sort((a, b) => (a.year > b.year ? 1 : -1));
 let alphabetSort = inventors.sort((a, b) => (a.first > b.first ? 1 : -1));
 
-console.table(ageSort);
+let totalYears = inventors.reduce((total, inventor) => {
+  return total + (inventor.passed - inventor.year)
+}, 0)
+
+let newTotalYears = inventors.map(inventor => (inventor.passed - inventor.year))
+// console.log(totalYears);
+// console.log(newTotalYears);
