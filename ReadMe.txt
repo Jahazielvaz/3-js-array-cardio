@@ -22,3 +22,10 @@ THINGS TO PRACTICE
 
     to this:
       (variable == "random sentence")
+
+
+LIST OUT THE ARRAY COMPONENTS WE'VE BEEN PRACTICING
+- Filter() : Allows you to access certain records, based on the chosen criteria
+- Map() : Allows you to execute a function in each of the values in an array, and then returns a new array with all the changes to all the values.
+- Sort() : Allows you to sort the list of records based on the criteria you give it
+- Reduce() : Like the map feature allows you to execute a function inside each of the values in the chosen array, however, instead of it returning a new array with each of the new values, it combines all the values into one giant property, which you can then access.
