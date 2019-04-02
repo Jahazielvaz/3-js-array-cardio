@@ -113,4 +113,8 @@ let age = inventors.map(inventor => inventor.passed - inventor.year);
 
 //Find all the people whos's name contains ben somewhere in their name.
 let benNames = people.filter(name => name.includes("Ben"));
-console.table(benNames);
+// console.table(benNames);
+
+//SORT PEOPLE ALPHABETICALLY
+let peopleAlphabet = people.sort((a, b) => (a > b) ? 1 : -1);
+console.table(peopleAlphabet);

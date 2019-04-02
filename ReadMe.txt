@@ -30,6 +30,8 @@ THINGS TO PRACTICE
 
 -.textContent : Allows to get the text values inside a property or set of properties.
 
+-.split(", ") : The split function allows you to split a string into an array of strings. I previously had a hard time knowing how to get it to split where I wanted it to split, but it turns out that you give it the criteria inside the string by just showing it what you want. For example, in this particular example, it would split right after the comma and the space. 
+
 LIST OUT THE ARRAY COMPONENTS WE'VE BEEN PRACTICING
 - Filter() : Allows you to access certain records, based on the chosen criteria
 - Map() : Allows you to execute a function in each of the values in an array, and then returns a new array with all the changes to all the values.
