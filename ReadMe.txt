@@ -10,6 +10,7 @@ Master the following array methods, to the point where you can perform each of t
 THINGS I'VE LEARNED
 -Console.table() is super cool. It actually shows you the data in an itemized table. Super cool!
 -You can't use return statement on the ternary operators
+-The .filter() feature is strict by default, so it's case sensitive.
 
 
 THINGS TO PRACTICE
@@ -23,6 +24,11 @@ THINGS TO PRACTICE
     to this:
       (variable == "random sentence")
 
+-array.from() : This will convert the chosen value into an array. NOTE: querySelectorAll() returns a node list. The .map() feature does not accept nodes, only arrays.
+
+-.includes() : This function allows you to select, what you want the values to contain as part of your condition. This goes perfect with the .filter() feature.
+
+-.textContent : Allows to get the text values inside a property or set of properties.
 
 LIST OUT THE ARRAY COMPONENTS WE'VE BEEN PRACTICING
 - Filter() : Allows you to access certain records, based on the chosen criteria

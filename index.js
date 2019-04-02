@@ -93,6 +93,24 @@ let allPeople = people.reduce((result, subject) => {
   result + subject;
 }, '');
 
-console.log(allPeople);
+// console.log(allPeople);
 //NOT YET: I feel like I could have passed this test if I was working with an array of objects, but i don't fully know how to work with a simple string array.
 //Need to find out if I even could use the reduce method on string arrays.
+
+
+//Sort by years lived
+let yearsLived = inventors.sort((a, b) => {
+  let lastGuy = a.passed - a.year;
+  let firstGuy = b.passed - b.year;
+
+  return lastGuy > firstGuy ? -1 : 1;
+})
+
+// console.table(yearsLived);
+
+let age = inventors.map(inventor => inventor.passed - inventor.year);
+// console.log(age);
+
+//Find all the people whos's name contains ben somewhere in their name.
+let benNames = people.filter(name => name.includes("Ben"));
+console.table(benNames);
